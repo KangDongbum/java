@@ -1,0 +1,9 @@
+package chapter2;
+
+public class test {
+	public static void main(String[] args) {
+		float a = 9.12345678912356F;
+		
+		System.out.println(a);
+	}
+}

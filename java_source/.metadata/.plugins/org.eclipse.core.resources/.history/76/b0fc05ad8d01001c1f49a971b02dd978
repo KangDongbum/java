@@ -1,0 +1,10 @@
+package chapter3;
+
+public class Operator3 {
+	public static void main(String[] args) {
+		int num = 10;
+		int num2 = num++;
+		
+		int num3 = ++num;
+	}
+}

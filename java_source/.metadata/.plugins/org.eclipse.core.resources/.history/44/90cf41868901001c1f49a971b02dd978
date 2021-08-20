@@ -1,0 +1,14 @@
+package chapter2;
+
+public class test {
+	
+	public static void main(String[] args) {
+		float a = 8388608.256F;
+		float b = 31474836471111111F;
+		int c = 2147483647;
+		
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c+1);
+	}
+}

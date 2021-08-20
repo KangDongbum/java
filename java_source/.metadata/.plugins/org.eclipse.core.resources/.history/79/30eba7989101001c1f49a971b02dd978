@@ -1,0 +1,8 @@
+package chapter3;
+
+public class Operator4 {
+	public static void main(String[] args) {
+		int num1 =10;
+		int i = 2;
+	}
+}
