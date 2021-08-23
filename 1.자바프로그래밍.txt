@@ -45,7 +45,7 @@ JDK - Java Development Kit
 
 환경 변수
 JAVA_HOME - 설치되어 있는 JDK 경로(C:\Program Files\Java\jdk-16.0.2)
-%JAVA_MOME%
+%JAVA_HOME%
 
 CLASS_PATH = %JAVA_HOME%lib;.
 
@@ -65,3 +65,16 @@ javac -> 컴파일하여 class 파일을 만든는 명령 프로그램
 
 한줄 주석 //
 여러줄 주석 /* ` !/
+
+객체 지향언어
+ 
+ JVM 
+ 
+ 자바소스 -> JVM(.class 컴파일 - 중간 언어) -> 플랫폼에 맞는 바이트 코드로 변환
+ 
+ JDK - Java Development Kit
+ 
+ JRE - Java Runtime Eviron...(환경)
+ 
+ first.second - 패키지
+ hello3.java
