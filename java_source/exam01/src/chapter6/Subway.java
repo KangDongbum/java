@@ -1,0 +1,22 @@
+package chapter6;
+
+public class Subway {
+	String lineNum;
+	int fare, profit, passengerCount;
+	
+	public Subway(String lineNum, int fare) {
+		this.lineNum = lineNum;
+		this.fare = fare;
+	}
+	
+	public void collect(Student s) {
+		profit += fare;
+		passengerCount++;
+		
+		s.money -= fare;
+	}
+	
+	public void showInfo() {
+		System.out.println("Subway No." + lineNum + " : " + passengerCount + "Έν ΕΎ½Β : " + profit);
+	}
+}

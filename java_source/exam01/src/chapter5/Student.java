@@ -6,13 +6,20 @@ public class Student {
 	int grade;
 	char gender;
 	
-	String stduentName;
+	String studentName;
 	String address;
-	
 	Subject subject;
 	
-	public static void main(String[] args) {
-		Student student1 = new Student();
-		System.out.println(student1);
+	public String getStudentName() {
+		return studentName;
 	}
+	public void setStudentName(String name) {
+		studentName = name;
+	}
+	
+	
+	/* public static void main(String[] args) {
+		Student student1 = new Student();
+		System.out.println(student1); 
+	} */ 
 }
