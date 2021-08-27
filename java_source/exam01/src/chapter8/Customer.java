@@ -7,10 +7,18 @@ public class Customer extends Object {
 	protected int bonusPoint; //적립금
 	protected double bonusRatio; //1%
 	
+	/*
 	public Customer() {
 		customerGrade = "SILVER";
 		bonusRatio = 0.01;
 		System.out.println("Customer 생성자");
+	}  */
+	
+	public Customer(int CustomerID, String CustomerName) {
+		this.CustomerID = CustomerID;
+		this.CustomerName = CustomerName;
+		customerGrade = "SILVER";
+		bonusRatio = 0.01;
 	}
 
 	public int calcPrice(int price) {
