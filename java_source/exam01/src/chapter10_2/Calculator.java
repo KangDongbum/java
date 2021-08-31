@@ -1,4 +1,4 @@
-package chapter10_1;
+package chapter10_2;
 
 /*
  * 오류 해결 방법

@@ -46,3 +46,25 @@ Collection 인터페이스
 throws IOException
 12 System.in.read() - InputStrem -> 바이트 단위의 콘솔 입력
 
+인터페이스 상수
+-> 정적 변수
+-> public static final
+
+디폴트 메소드
+default 예약어
+-> 인터페이스를 구현한 클래스의 인스턴스 생성 후 사용 가능
+
+정적 메소드
+-> 인스턴스 생성과 상관 없이 사용 가능한 메소드
+
+private 메소드 - 인터페이스 내부에서만 접근이 가능
+
+인터페이스는 여러개를 함께 구현
+implements(구현) 인터페이스, 인터페이스
+
+MyClass mClass = new MyClass();
+
+X xClass = mClass; -> x();
+Y yClass = mClass; -> y();
+
+

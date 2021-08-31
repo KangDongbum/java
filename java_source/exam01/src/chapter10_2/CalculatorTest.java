@@ -1,4 +1,4 @@
-package chapter10_1;
+package chapter10_2;
 
 public class CalculatorTest {
 	public static void main(String[] args) {

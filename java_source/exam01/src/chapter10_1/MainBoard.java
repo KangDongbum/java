@@ -1,4 +1,4 @@
-package chapter10;
+package chapter10_1;
 
 public interface MainBoard {
 

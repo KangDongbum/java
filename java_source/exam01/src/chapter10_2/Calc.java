@@ -1,4 +1,4 @@
-package chapter10_1;
+package chapter10_2;
 
 public interface Calc {
 	int ERROR = -1; // 컴파일시 public static final 자동 추가 - static 상수

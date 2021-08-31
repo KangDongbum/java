@@ -1,4 +1,4 @@
-package chapter10;
+package chapter10_1;
 
 public interface IOPort {
 	public String type = "DIV"; // 인터페이스 -> public static final이 컴파일 자동으로 추가
