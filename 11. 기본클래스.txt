@@ -1,0 +1,57 @@
+1. Object 클래스
+	1) java.lang.Object
+				- 모든 클래스는 java.lang.Object 상속 받고 있다.
+	2) 컴파일러가 자동 추가
+		a. import java.lang.*;
+		b. extends Object
+		
+		String
+		Wrapper(Integer, Double, Long, Exception...)
+		Math
+		Number
+	
+	3) toString -> 인스턴스를 출력할때 호출되는 메소드
+		Object
+			toString
+				public String toString(){
+					return getClass().getName() + "@" + Integer.toHexString(hashCode());
+				}
+			equals - 인스턴스의 주소의 일치 여부
+	
+	4) Object clone()
+	
+		참고) throws - 예외 전가
+		
+		try{
+		s2.clone()
+		
+		} catch (CloneNotSupportedException e){
+		
+		}
+	
+	5) Class getClass -> 클래스의 정보
+	Class cls = s2.getClass();
+	Constructor[] cons = cls.getConstructors(); // 생성자
+	Method[] methods = cls.getMethods(); // 메소드
+	Field[] fields = cls.getFields(); // 변수
+	...
+	
+2. String 클래스
+	상수풀
+	char ch = 'A';
+	
+	데이터 영역
+	Code & Constants 영역
+	
+3. Wrapper 클래스
+	기본 자료형 처럼 사용할 수 있는 클래스
+	byte - Byte
+	short - Short
+	int - Integer
+	long - Long
+	float - Float
+	double - Double
+	boolean - Boolean
+	char - Character
+	
+4. Class 클래스
