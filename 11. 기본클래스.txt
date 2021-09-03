@@ -55,3 +55,12 @@
 	char - Character
 	
 4. Class 클래스
+	Object
+		.getClass();
+	
+	모든클래스.class
+	
+	컴파일 이후 실행 중에서 로딩
+	클래스가 있는지 여부... 컴파일 시에 체크
+	
+	Class.forNmae -> 동적로딩

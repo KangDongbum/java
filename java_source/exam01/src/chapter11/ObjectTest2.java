@@ -26,6 +26,17 @@ public class ObjectTest2 {
 		
 		Integer num1 = new Integer(100);
 		Integer num2 = new Integer(100);
+		int num11 = 100;
+		int num22 = 100;
+		
+		System.out.println("t1 : " + (num1 == num2));
+		System.out.println("t2 : " + (num11 == num2));
+		System.out.println(num1.hashCode());
+		System.out.println(num2.hashCode());
+		
+		System.out.println(System.identityHashCode(num1));
+		System.out.println(System.identityHashCode(num2));
+		
 		System.out.println("equals : " + num1.equals(num2));
 		System.out.println("аж╪р : " + (num1 == num2));
 		
