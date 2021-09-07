@@ -12,7 +12,6 @@ class IntegerDescOrder implements Comparator<Integer>{
 	public int compare(Integer o1, Integer o2) {
 		return o1.compareTo(o2) * -1; // 내림차순
 	}
-	
 }
 
 /** 추가, 삭제, 조회 */

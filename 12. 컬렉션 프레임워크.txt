@@ -141,7 +141,7 @@
 	
 정리)
 	Collection 인터페이스
-	- 반복 순회  - Iterator
+	- 반복 순회  - Iterator(hasNext(), next())
 	
 	List 인터페이스(순차 자료 구조 - 배열) - 인덱스 번호
 		- ArrayList 
@@ -159,8 +159,8 @@
 		
 		HashSet 
 		TreeSet (HashSet + 정렬  
-									- java.lang.Comparable  Interface - int compareTo
-									- java.util.Comparator interface - int compare
+									- java.lang.Comparable  Interface - int CompareTo
+									- java.util.Comparator interface - int Compare
 												- TreeSet, TreeMap compare가 정의되어 있는 인스턴스를 생성자 
 												   매개변수로 넣어 줘야 한다.
 									
