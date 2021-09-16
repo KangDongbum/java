@@ -27,7 +27,7 @@ public class BookArrayList {
 						return true;
 					}
 				}
-				System.out.println(booknumber + "가 존재하지 않습니다.");
+				System.out.println(booknumber + " (이)가 존재하지 않습니다.");
 				return false;
 			}
 				 
@@ -39,5 +39,17 @@ public class BookArrayList {
 				for(Book book : bookList) {
 					System.out.println(book);
 				}
+			}
+			
+			public Book get(int i) {
+				return bookList.get(i);
+			}
+			
+			public int size() {
+				return bookList.size();
+			}
+			
+			public Book set(int i,Book book) {
+				return bookList.set(i,book);
 			}
 }
