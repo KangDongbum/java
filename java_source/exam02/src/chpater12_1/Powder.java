@@ -1,0 +1,11 @@
+package chpater12_1;
+
+public class Powder {
+	void doPrinting() {
+		System.out.println("파우더로 프린팅!");
+	}
+	
+	public String toString() {
+		return "파우더";
+	}
+}

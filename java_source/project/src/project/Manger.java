@@ -3,7 +3,6 @@ package project;
 import java.io.IOException;
 import java.util.Scanner;
 
-
 public class Manger {
 	public static void main(String[] args){
 		BookArrayList bookarraylist = new BookArrayList();
