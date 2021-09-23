@@ -9,24 +9,22 @@ public class Manger {
 		Scanner sc = new Scanner(System.in);
 		
 		//Book 인스턴스 생성
-		
-		Book book1 = new Book(1001, "1페이지 한국사 365", "심용환", "픽피시");
-		Book book2 = new Book(1002, "돈 설명서", "라슈미 시데르슈판드", "솔빛길");
-		Book book3 = new Book(1003, "완전한 행복", "정유정", "은행나무"); 
-		
-		/*
 		bookarraylist.addBook(new Book(1001, "1페이지 한국사 365", "심용환", "픽피시"));
 		bookarraylist.addBook(new Book(1002, "돈 설명서", "라슈미 시데르슈판드", "솔빛길"));
-		bookarraylist.addBook(new Book(1003, "완전한 행복", "정유정", "은행나무")); */
+		bookarraylist.addBook(new Book(1003, "완전한 행복", "정유정", "은행나무")); 
+		bookarraylist.addBook(new Book(1004, "쉽게 배우는 JSP 웹 프로그래밍", "송미영", "한빛아카데미"));
+		bookarraylist.addBook(new Book(1005, "달러구트 꿈 백화점","이미예","팩토리나인"));
+		bookarraylist.addBook(new Book(1006, "미래의 부","이지성","차이정원"));
+		bookarraylist.addBook(new Book(1007, "불편한 편의점","김호연","나무옆의자"));
+		bookarraylist.addBook(new Book(1008, "데일 카네기 인간 관계론","데일 카네기","현대지성"));
+		bookarraylist.addBook(new Book(1009, "데미안","헤르만 헤세","민음사"));
+		bookarraylist.addBook(new Book(1010, "작별하지 않는다","한강","문학동네"));
 		
-		bookarraylist.addBook(book1);
-		bookarraylist.addBook(book2);
-		bookarraylist.addBook(book3);
 		System.out.println("--------------------------------------------------------------------------------");
 		
 	while(true){
 			System.out.println("서비스를 골라주세요!");
-			System.out.println("추가0     삭제1       변경2        목록3");
+			System.out.println("추가:0       삭제:1       변경:2       검색:3       목록:4");
 			System.out.println("--------------------------------------------------------------------------------");
 			
 	String select = sc.nextLine();
@@ -130,7 +128,7 @@ public class Manger {
 			while(true) {
 				bookarraylist.showAllBook();
 				System.out.println("--------------------------------------------------------------------------------");
-				System.out.println("변경하실 책을 선택해주세요");
+				System.out.println("변경하실 책 행렬을 입력해주세요");
 				int change = sc.nextInt();
 				sc.nextLine();
 				change--;
@@ -189,7 +187,60 @@ public class Manger {
 				System.out.println("--------------------------------------------------------------------------------");
 			} /** 책 변경 E **/
 		
-	} else if(select.equals("3")) { /** 책 목록 S **/
+	} else if(select.equals("3")) { /** 책 검색 S**/
+		try {
+			while(true) {
+				System.out.println("--------------------------------------------------------------------------------");
+				System.out.println("무엇으로 검색하시겠습니까");
+				System.out.println("도서명0 \t저자1 \t출판사2");
+				System.out.println("--------------------------------------------------------------------------------");
+				String type = sc.nextLine();
+
+				// 도서명 검색
+				System.out.println("--------------------------------------------------------------------------------");
+				if( type.equals("0") ) {
+					System.out.println("검색할 도서명을 입력해주세요");
+				}
+				else if( type.equals("1") ) {
+					System.out.println("검색할 저자를 입력해주세요");
+				}
+				else if( type.equals("2") ) {
+					// 출판사 검색
+					System.out.println("검색할 출판사를 입력해주세요");
+				}
+				else {
+					System.out.println("입력하신 서비스는 없습니다!!");
+					System.out.println("--------------------------------------------------------------------------------");
+					type = "-1";
+				}
+				
+				if( type.compareTo("-1") != 0 ) {
+					String title = "";
+					System.out.println("--------------------------------------------------------------------------------");
+					title = sc.nextLine();
+					bookarraylist.showSearchedBook( type, title );
+				}
+				
+				 System.out.println("계속 찾으시겠습니까? Y/N ");
+					String recycle = sc.nextLine();
+					if(!recycle.equals("Y") && !recycle.equals("y")) {
+						if(recycle.equals("N") || recycle.equals("n")) {
+							System.out.println("책 검색 서비스를 종료합니다.");
+							break;
+						}
+						if(recycle.length()<1){
+							System.out.println("공란은 안됩니다!!");
+							break;
+						}
+						throw new Exception();
+					}
+			}
+		} catch(Exception e) {
+			System.out.println("양식이 틀렸습니다.");
+			System.out.println("--------------------------------------------------------------------------------");
+		} /**  책 검색 E **/
+		
+	} else if(select.equals("4")) { /** 책 목록 S **/
 		try{
 			while(true) {
 				System.out.println("--------------------------------------------------------------------------------");
